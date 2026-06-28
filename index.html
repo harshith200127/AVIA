@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All India Velama Association (AIVA) - North America Student & Career Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-block">
+          <img src="logo.png" alt="All India Velama Association logo" class="brand-logo" />
+          <div class="brand-copy">
+            <p class="eyebrow">Community Network</p>
+            <h1>All India Velama Association (AIVA) - North America Student & Career Portal</h1>
+            <p class="subtitle">
+              A members-only space where AIVA community students and professionals share journey
+              blogs, post roles, and make themselves reachable for support and opportunities.
+            </p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <a href="#journey-blogs" class="btn btn-primary">Post Journey</a>
+          <a href="#roles-board" class="btn btn-ghost">Post Role</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="container section" id="vision">
+        <h2>Why This Portal</h2>
+        <p>
+          This AIVA community portal helps members contribute quickly: share real journey
+          stories, publish openings, and leave a contact email so peers can reach out for
+          guidance, referrals, and career help.
+        </p>
+      </section>
+
+      <section class="container section" id="highlights">
+        <h2>Portal Highlights</h2>
+        <div class="grid three-col feature-grid">
+          <article class="card compact">
+            <h3>Journey Blogs</h3>
+            <p>Students and job holders can share learning paths, visa/work experiences, and growth stories.</p>
+          </article>
+          <article class="card compact">
+            <h3>Roles Board</h3>
+            <p>Post internship, full-time, or referral opportunities with an email for quick reach-out.</p>
+          </article>
+          <article class="card compact">
+            <h3>Reach-out Directory</h3>
+            <p>Anyone can list skills and support areas with only email as the contact detail.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="journey-blogs">
+        <h2>Journey Blogs</h2>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>Write Your Journey</h3>
+            <form id="blog-form" class="stack">
+              <label>
+                Your Name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Blog Title
+                <input type="text" name="title" required />
+              </label>
+              <label>
+                Journey
+                <textarea name="story" rows="4" required></textarea>
+              </label>
+              <label>
+                Contact Email
+                <input type="email" name="email" required />
+              </label>
+              <button type="submit" class="btn btn-primary">Publish Blog</button>
+            </form>
+            <p class="form-status" id="blog-status" aria-live="polite"></p>
+          </article>
+
+          <article class="card">
+            <h3>Recent Blogs</h3>
+            <label class="search-label">
+              Search blogs by keyword
+              <input id="blog-search" type="search" placeholder="Try: internship, relocation, healthcare" />
+            </label>
+            <ul id="blog-list" class="list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="roles-board">
+        <h2>Roles & Opportunities</h2>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>Post a Role</h3>
+            <form id="role-form" class="stack">
+              <label>
+                Role Title
+                <input type="text" name="title" required />
+              </label>
+              <label>
+                Company / Organization
+                <input type="text" name="organization" required />
+              </label>
+              <label>
+                Type
+                <select name="type" required>
+                  <option value="">Select type</option>
+                  <option>Internship</option>
+                  <option>Full-Time</option>
+                  <option>Part-Time</option>
+                  <option>Contract</option>
+                </select>
+              </label>
+              <label>
+                Contact Email
+                <input type="email" name="email" required />
+              </label>
+              <button type="submit" class="btn btn-secondary">Post Role</button>
+            </form>
+          </article>
+
+          <article class="card">
+            <h3>Open Roles Feed</h3>
+            <label class="search-label">
+              Filter roles by title, company, or type
+              <input id="role-search" type="search" placeholder="Try: analyst, intern, contract" />
+            </label>
+            <ul id="role-list" class="list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="reach-out">
+        <h2>Reach-out for Help</h2>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>Add Your Contact</h3>
+            <form id="help-form" class="stack">
+              <label>
+                Name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                How can you help?
+                <input type="text" name="support" placeholder="Resume review, referrals, visa guidance" required />
+              </label>
+              <label>
+                Contact Email
+                <input type="email" name="email" required />
+              </label>
+              <button type="submit" class="btn btn-secondary">Add to Directory</button>
+            </form>
+          </article>
+
+          <article class="card">
+            <h3>People You Can Reach Out To</h3>
+            <label class="search-label">
+              Search by name or support area
+              <input id="help-search" type="search" placeholder="Try: resume, software, guidance" />
+            </label>
+            <ul id="help-list" class="list"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>All India Velama Association (AIVA) - North America Student & Career Portal</p>
+        <p>Members-only community platform for blogs, opportunities, and peer support</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "aiva-na-community-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "All India Velama Association (AIVA) members-only North America Student and Career portal",
+  "scripts": {
+    "start": "python3 -m http.server 5500"
+  }
+}
